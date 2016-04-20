@@ -2,3 +2,5 @@ test:
   post:
     - mkdir -p $CIRCLE_TEST_REPORTS/spock
     - cp build/test-results/*.xml $CIRCLE_TEST_REPORTS/spock
+    - mkdir -p $CIRCLE_TEST_REPORTS/geb
+    - cp -r build/test-reports $CIRCLE_TEST_REPORTS/geb
