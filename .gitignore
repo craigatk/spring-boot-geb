@@ -1,0 +1,10 @@
+# Build output files
+build
+
+# IntelliJ project files
+.idea
+*.iml
+
+# Eclipse project files
+.classpath
+.project
