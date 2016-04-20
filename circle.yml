@@ -1,0 +1,4 @@
+test:
+  post:
+    - mkdir -p $CIRCLE_TEST_REPORTS/spock
+    - cp build/test-results/*.xml $CIRCLE_TEST_REPORTS/spock
