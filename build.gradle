@@ -34,7 +34,15 @@ dependencies {
     compile "org.codehaus.groovy:groovy-all:${groovyVersion}"
 
     compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
     compile 'org.springframework.boot:spring-boot-starter-actuator'
+
+    compile 'com.h2database:h2:1.4.191'
+
+    compile 'org.grails:gorm-hibernate4-spring-boot:5.0.5.RELEASE'
+
+    compile 'org.webjars:bootstrap:3.3.6'
+    compile 'org.webjars:webjars-locator:0.30'
 
     testCompile "org.spockframework:spock-core:${spockVersion}"
     testCompile "org.spockframework:spock-spring:${spockVersion}"

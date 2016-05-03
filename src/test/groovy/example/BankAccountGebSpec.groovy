@@ -7,7 +7,7 @@ import org.springframework.boot.test.WebIntegrationTest
 
 @SpringApplicationConfiguration(classes=Application.class)
 @WebIntegrationTest(randomPort = true)
-class HelloSpec extends GebReportingSpec {
+class BankAccountGebSpec extends GebReportingSpec {
     @Value('${local.server.port}')
     int port
 
@@ -15,11 +15,18 @@ class HelloSpec extends GebReportingSpec {
         browser.setBaseUrl("http://localhost:${port}")
     }
 
-    def 'should render hello message'() {
+    def "should deposit amount into bank account"() {
         when:
-        go '/'
+        AccountPage accountPage = to(AccountPage)
 
         then:
-        assert page.downloadText() == 'Greetings from Spring Boot!'
+        assert accountPage.currentBalance == 0
+
+        when:
+        DepositSuccessPage depositSuccessPage = accountPage.depositAmount(100)
+
+        then:
+        assert depositSuccessPage.depositAmount == 100
+        assert depositSuccessPage.newBalance == 100
     }
 }

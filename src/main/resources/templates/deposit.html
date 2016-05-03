@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Successful Deposit</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+</head>
+<body>
+
+<div class="container">
+    <h1>Success!</h1>
+
+    <div class="row">
+        <div class="col-md-12">
+            Successfully deposited: <span id="deposit-amount" th:text="${depositAmount}"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            New balance is: <span id="new-balance" th:text="${accountBalance}"></span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
