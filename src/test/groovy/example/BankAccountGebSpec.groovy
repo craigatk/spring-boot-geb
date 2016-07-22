@@ -12,7 +12,7 @@ class BankAccountGebSpec extends BaseGebSpec {
         DepositSuccessPage depositSuccessPage = accountPage.depositAmount(100)
 
         then:
-        assert depositSuccessPage.depositAmount == 10
+        assert depositSuccessPage.depositAmount == 100
         assert depositSuccessPage.newBalance == 100
     }
 }

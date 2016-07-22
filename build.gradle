@@ -1,7 +1,7 @@
 ext {
     gebVersion = '0.13.1'
     groovyVersion = '2.4.6'
-    seleniumVersion = '2.53.0'
+    seleniumVersion = '2.53.1'
     spockVersion = '1.0-groovy-2.4'
 }
 
