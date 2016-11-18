@@ -1,7 +1,7 @@
 ext {
-    gebVersion = '0.13.1'
+    gebVersion = '1.0'
     groovyVersion = '2.4.6'
-    seleniumVersion = '2.53.1'
+    seleniumVersion = '3.0.1'
     spockVersion = '1.0-groovy-2.4'
 }
 
@@ -53,7 +53,7 @@ dependencies {
     testCompile "org.seleniumhq.selenium:selenium-firefox-driver:${seleniumVersion}"
 
     // For downloading browser-specific drivers that browsers like Chrome and IE require
-    testCompile("io.github.bonigarcia:webdrivermanager:1.4.1") {
+    testCompile("io.github.bonigarcia:webdrivermanager:1.5.0") {
         exclude group: 'org.seleniumhq.selenium'
     }
 }

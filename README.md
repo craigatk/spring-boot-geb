@@ -7,3 +7,5 @@ To run the functional tests, run:
 ```
 gradlew test
 ```
+
+Note: This example is using Selenium 3, which requires that you use Java 8.

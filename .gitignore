@@ -8,3 +8,6 @@ build
 # Eclipse project files
 .classpath
 .project
+
+# Gradle directories
+.gradle
